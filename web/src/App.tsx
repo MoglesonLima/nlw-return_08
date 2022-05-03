@@ -1,23 +1,5 @@
-import { useState } from 'react'
+import { Widget } from "./componets/Widget";
 
-interface ButtonProps{
-  text?: string;
+export function App(){
+  return <Widget />
 }
-
-function Button(props: ButtonProps){
-  return (
-    <button className='bg-violet-600 p-1'>{props.text ?? 'Default'}</button>
-  );
-}
-
-function App() {
-  return (
-    <div>
-    <Button text="Enviar"/>
-    <Button text="OK!"/>
-    <Button />
-    </div>
-  );
-}
-
-export default App
